@@ -280,9 +280,7 @@ label {
     padding: 50px;
 }
 
-.register {
-    width: 40%;
-}
+
 
 .register label {
     color: var(--darkgrey-color);
@@ -310,6 +308,7 @@ label {
 
 .upload-btn-wrapper p {
     margin-bottom: 0px;
+    width: 184px;
     /* padding-left: 20px; */
 }
 
@@ -327,6 +326,8 @@ label {
     top: 6;
     opacity: 0;
 }
+
+
 
 .register-btn {
     color: var(--text-color);
