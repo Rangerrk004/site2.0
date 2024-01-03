@@ -179,7 +179,8 @@ label {
 }
 
 .register {
-    width: 40%;
+    /* width: 40%; */
+
 }
 
 .register label {
@@ -208,6 +209,7 @@ label {
 
 .upload-btn-wrapper p {
     margin-bottom: 0px;
+    width: 184px;
     /* padding-left: 20px; */
 }
 
@@ -225,11 +227,17 @@ label {
     top: 6;
     opacity: 0;
 }
-.register-btn{
+
+.error {
+    /* color: red; */
+}
+
+.register-btn {
     color: var(--text-color);
     padding: 5px 50px;
     background-color: var(--darkgrey-color);
 }
+
 /*------------------------------
         meadia quries
  -------------------------------*/

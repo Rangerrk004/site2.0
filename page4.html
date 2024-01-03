@@ -99,46 +99,80 @@
 
             <div class="register-section m-auto">
                 <div class="registerbody d-flex justify-content-between">
-                    <form class="register">
-                        <label for=""> Company Name</label>
-                        <input type="text" class="input-fill" name="" id="">
+                    <form class="register" id="registerForm" autocomplete="off" method="post">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="input-group mb-4">
+                                    <label for="companyname"> Company Name</label>
+                                    <input type="text" class="input-fill" name="companyname" id="companyname" required>
 
-                        <label for="">Email</label>
-                        <input type="email" class="input-fill" name="" id="">
+                                </div>
+                                <div class="input-group mb-4">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="input-fill" name="email" id="email" required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <label for="phone">Mobile</label>
+                                    <input type="number" class="input-fill" name="phone" id="phone">
+                                </div>
+                                <div class="input-group mb-4">
+                                    <label for="crno">CR.No</label>
+                                    <input type="text" class="input-fill" name="crno" id="crno">
+                                </div>
+                                <div class="input-group mb-4">
+                                    <label for="licencsno">Licencs.No</label>
+                                    <input type="text" class="input-fill" name="licencsno" id="licencsno">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
 
-                        <label for="">Mobile</label>
-                        <input type="number" class="input-fill" name="" id="">
 
-                        <label for="">CR.No</label>
-                        <input type="text" class="input-fill" name="" id="">
+                                <div class="upload-btn-wrapper mb-4">
 
-                        <label for="">Licencs.No</label>
-                        <input type="text" class="input-fill" name="" id="">
+                                    <div class="btn add-pic">
+                                        <div>
+                                            <label for="myfile">Attach CR</label>
+                                            <input type="file" accept=".png, .jpg, .jpeg, .pdf" name="myfile"
+                                                id="myfile">
+                                        </div>
+                                    </div>
+
+                                    <i class="fa-regular fa-file"></i>
+                                </div>
+
+                                <div class="upload-btn-wrapper mb-4">
+                                    <div>
+                                        <label for="licencs">Licencse.no</label>
+                                        <div class="btn add-pic">
+                                            <input type="file" id="licencs" name="licencs"
+                                                accept=".png, .jpg, .jpeg, .pdf">
+                                        </div>
+                                    </div>
+                                    <i class="fa-regular fa-file"></i>
+                                </div>
+                                <div class="upload-btn-wrapper mb-4">
+
+                                    <div>
+                                        <label for="catogery">Busniess Catogery</label>
+                                        <div class="btn add-pic">
+                                            <input type="file" id="catogery" name="catogery"
+                                                accept=".png, .jpg, .jpeg, .pdf">
+                                        </div>
+                                    </div>
+                                    <i class="fa-regular fa-file"></i>
+                                </div>
+                                <button type="submit" class="btn register-btn">Register</button>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
                     </form>
-                    <div>
-                        <div class="upload-btn-wrapper mb-4">
-                            <p>Attach CR</p>
-                            <button class="btn add-pic">
-                                <input type="file" name="myfile">
-                            </button>
-                            <i class="fa-regular fa-file"></i>
-                        </div>
-                        <div class="upload-btn-wrapper mb-4">
-                            <p>Licencse.no</p>
-                            <button class="btn add-pic">
-                                <input type="file" name="myfile">
-                            </button>
-                            <i class="fa-regular fa-file"></i>
-                        </div>
-                        <div class="upload-btn-wrapper mb-4">
-                            <p>Busniess Catogery</p>
-                            <button class="btn add-pic">
 
-                            </button>
-                            <i class="fa-regular fa-file"></i>
-                        </div>
-                        <button type="submit" class="btn register-btn">Register</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -204,7 +238,10 @@
     <script src="./vendors/bootstrap.bundle.min.js"> </script>
     <script src="vendors/jquery.min.js"></script>
     <script src="vendors/slick.min.js"></script>
-    <script src="./JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <!-- <script src="./JS/script.js"></script> -->
+    <script src="./JS/validation.js"></script>
 </body>
 
 </html>
