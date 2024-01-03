@@ -173,6 +173,7 @@ Catogory section here
     background-color: var(--grey-color);
     height: 225px;
     box-shadow: var(--box-shadow);
+    border-radius: 23px 23px 0px 0px;
 }
 
 .card-title,
