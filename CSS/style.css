@@ -9,7 +9,7 @@
      custom class for section padding 
 ---------------------------------------*/
 section {
-    padding: 70px 0px;
+    padding: 50px 0px;
 }
 
 :root {
@@ -22,7 +22,10 @@ section {
 }
 
 body {
-    background: linear-gradient(to bottom left, rgb(0, 0, 0), grey, rgb(234, 234, 183));
+    background-image: url(../assets/Background.png);
+    /* background: linear-gradient(to bottom left, rgb(0, 0, 0), grey, rgb(234, 234, 183)); */
+    background-position: center;
+    background-size: cover;
 }
 
 /* ------------footer code -----------------*/
@@ -33,16 +36,32 @@ body {
 
 .privacy,
 a {
-    float: right;
+    /* float: right; */
     gap: 20px;
     color: var(--text-color);
     text-decoration: none;
 }
 
+.privacy p {
+    margin-bottom: 0px;
+}
+
+.footer-section {
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px;
+}
 
 /* ------------------------------------
      nav section start 
 ---------------------------------------*/
+.image-logo img {
+    margin-top: 50px;
+    width: 100px;
+}
+
 
 .navbar {
     margin-top: 60px;
@@ -80,6 +99,10 @@ a {
     width: 40%;
 }
 
+/* -------------------
+Catogory section here
+--------------------*/
+
 .categori {
     margin: auto;
     align-items: center;
@@ -97,8 +120,78 @@ a {
 }
 
 .titel,
-p {
+.paragraph {
     text-align: center;
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 12.333333%;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-list img {
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+/* 2img width fixing code */
+.list-iii {
+    width: 50px !important;
+}
+
+.list-iv {
+    width: 24px !important;
+}
+
+/* 2img width fixing code ^ */
+
+.menu-list p,
+.fa-angle-right {
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.menulites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+/*--------------------------------
+         New Offer section start 
+    ----------------------------------*/
+.card {
+    background-color: var(--grey-color);
+    height: 225px;
+    box-shadow: var(--box-shadow);
+}
+
+.card-title,
+.card-body p {
+    color: var(--darkgrey-color);
+}
+
+.card-text,
+.read-more {
+    font-size: 10px;
+}
+
+.read-more {
+    color: blue;
+}
+
+.offer-section {
+    justify-content: center;
+    gap: 20px;
 }
 
 /* ------------------------------------
@@ -114,24 +207,33 @@ label {
     outline: 0;
     border: 0;
     border-bottom: 1px solid var(--text-color);
-    background-color: #bfb0b0;
+    background-color: transparent;
 }
 
 .box {
-    padding-top: 10px;
+    padding: 20px;
     border-radius: 10px;
     height: 150px;
-    background-color: var(--box-background);
+    background-color: var(--grey-color);
 }
 
-.box>p {
-    color: #8c6f6f;
+.box>p .fa-paper-plane {
+    color: var(--darkgrey-color);
 }
 
 .btn-1 {
     float: right;
+    color: var(--darkgrey-color);
 }
 
+/* slider------ */
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+}
+
+.carousel-item {
+    box-shadow: var(--box-shadow);
+}
 
 /* /////---------------------Page 2 Codes Start Here---------------------------/// */
 .search-box {
@@ -225,11 +327,13 @@ label {
     top: 6;
     opacity: 0;
 }
-.register-btn{
+
+.register-btn {
     color: var(--text-color);
     padding: 5px 50px;
     background-color: var(--darkgrey-color);
 }
+
 /*------------------------------
         meadia quries
  -------------------------------*/
