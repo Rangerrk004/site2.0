@@ -242,7 +242,7 @@ label {
     align-items: center;
     background-color: var(--box-background);
     border-radius: 10px;
-    height: 80px;
+    height: 90px;
 }
 
 .searchbody {
@@ -250,10 +250,15 @@ label {
     justify-content: center;
     align-items: center;
     width: 350px;
-    height: 80px;
-    color: var(--text-color);
-    background-color: var(--main-background);
+    height: 90px;
+    gap: 20px;
+    color: var(--grey-color);
+    background-color: var(--darkgrey-color);
     border-radius: 10px;
+}
+
+.searchbody img {
+    width: 50px;
 }
 
 .searchbtn-2 {
@@ -264,6 +269,32 @@ label {
 .university h3 {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.college-logo {
+    background-color: var(--text-color);
+    max-width: 526px;
+    border-radius: 10px;
+    height: 180px;
+    margin-bottom: 30px;
+}
+
+.college_name {
+    color: var(--paragraph-text-co);
+}
+
+.paragraph2 {
+    color: var(--paragraph-text-co);
+}
+
+/* Page 3 Codes Here-------------------------- */
+.menuimg img {
+    max-width: 526px;
+    margin-bottom: 30px;
+}
+
+.icon2 {
+    width: 50%;
 }
 
 /*--------------
