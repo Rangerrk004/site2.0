@@ -288,7 +288,9 @@ label {
     color: var(--paragraph-text-co);
 }
 
-/* Page 3 Codes Here-------------------------- */
+/*----------------------- 
+Page 3 Codes Here
+---------------------------------------------- */
 .menuimg img {
     max-width: 526px;
     margin-bottom: 30px;
@@ -300,9 +302,9 @@ label {
 
 /*--------------
  Page4 codes here
- ---------------------- */
+ ------------------------------------ */
 .register-section {
-    width: 820px;
+    width: 850px;
     border-radius: 20px;
     background-color: var(--grey-color);
     box-shadow: var(--box-shadow);
@@ -315,6 +317,7 @@ label {
 
 
 .register label {
+    margin-top: -20px;
     color: var(--darkgrey-color);
     /* font-weight: 500; */
 }
@@ -324,12 +327,12 @@ label {
     outline: 0;
     border: 0;
     border-bottom: 2px solid var(--darkgrey-color);
-    background-color: var(--grey-color);
+    background-color: transparent;
 }
 
 .upload-btn-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     height: 45px;
@@ -344,13 +347,6 @@ label {
     /* padding-left: 20px; */
 }
 
-.add-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 70px 0px 70px;
-}
-
 .upload-btn-wrapper input[type=file] {
     font-size: 20px;
     position: absolute;
@@ -359,12 +355,140 @@ label {
     opacity: 0;
 }
 
+.btn:focus {
+    box-shadow: none;
+}
 
+.dropdown-toggle::after {
+    margin-left: 175px;
+}
+
+.cta-btn {
+    padding: 0px 0px;
+}
 
 .register-btn {
     color: var(--text-color);
     padding: 5px 50px;
+    border-radius: 10px;
     background-color: var(--darkgrey-color);
+}
+
+/* ////////------------- */
+.applink {
+    margin-top: 50px;
+    gap: 110px;
+}
+
+.applink-title {
+    background-color: black;
+    width: 150px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.link>p {
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+
+.link>h6 {
+    margin-bottom: 0px;
+}
+
+.applink-title>i {
+    font-size: 25px;
+}
+
+.linkbody img {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+
+/* ///-------------------
+Page 5 Codes Here
+------------------------------------- */
+.profile-card {
+    width: 600px;
+}
+
+.addbtn {
+    background-color: var(--grey-color);
+    padding: 10px 60px;
+}
+
+.wallet-btnbody {
+    display: flex;
+    justify-content: center;
+    margin-top: 220px;
+
+}
+
+.addbtn p {
+    color: var(--darkgrey-color);
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.btn-done {
+    background-color: var(--grey-color);
+    padding: 10px 30px;
+    color: var(--darkgrey-color);
+}
+
+.profile {
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.input-group {
+    max-width: 440px;
+}
+
+.input-group label {
+    /* margin-bottom: 20px; */
+}
+
+.fill-color {
+    border-bottom: 2px solid var(--paragraph-text-co);
+}
+
+/* btn password change */
+.btn-forget {
+    gap: 260px;
+}
+
+.forget {
+    margin-bottom: 20px;
+    color: skyblue;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+.input-group p {
+    margin-bottom: 0px;
+    color: var(--grey-color);
+}
+
+
+
+/* ---------------------- */
+.more-details {
+    max-width: 380px;
+    border-bottom: 2px solid var(--grey-color);
+}
+
+.more-details>p {
+    font-size: 10px;
 }
 
 /*------------------------------

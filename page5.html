@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 5</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="vendors/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/slick-slider.css" />
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="subheader">
+        <div class="container">
+            <div class="image-logo d-flex justify-content-between">
+                <img src="./images/logo.png" class="img-fluid " alt="">
+                <img src="./images/logo2.png" class="img-fluid " alt="">
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light  bg-transparent">
+            <div class="container justify-content-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggle-btn"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Location Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register as Partner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Testaahel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="searchbar mt-4">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- upper searchbar -->
+    <section>
+        <div class="container">
+            <div class="categori d-flex justify-content-center">
+                <div class="categori-body">
+                    <h4 class="titel">Categories</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br>
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam,
+                        quis nostrud <br>
+                        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
+                        vel
+                        eum iriure dolor in hendrerit in vulputate velit <br>
+                        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                        iusto odio dignissim qui blandit praesent luptatum <br>
+                        zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="./images/profilebg.png" class="profile-card" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wallet-btnbody">
+                        <button class="btn addbtn">
+                            <p>
+                                Add to my wallet
+                            </p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="d-flex align-items-center gap-5 py-3">
+                <h3 class="profile">Profile</h3>
+                <button class="btn btn-done">Done</button>
+            </div>
+            <p class="paragraph2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br>
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud.</p>
+
+            <!-- form sec here -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group mb-4">
+                        <label for="companyname"><i class="fa-regular fa-user"></i> Company
+                            Name</label>
+                        <input type="text" class="input-fill fill-color" name="companyname" id="companyname" required>
+
+                    </div>
+                    <div class="input-group mb-4">
+                        <label for="email"><i class="fa-regular fa-envelope"></i> Email</label>
+                        <input type="email" class="input-fill fill-color" name="email" id="email" required>
+                    </div>
+                    <div class="input-group mb-4">
+                        <label for="phone"><i class="fa-solid fa-phone"></i> Mobile</label>
+                        <input type="number" class="input-fill fill-color" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group mb-4">
+                        <label for="crno"><i class="fa-regular fa-user"></i> QID.No</label>
+                        <input type="text" class="input-fill fill-color" name="crno" id="crno">
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="btn-forget d-flex  align-items-center">
+                            <label for="licencsno"><i class="fa-solid fa-lock"></i> Password</label>
+                            <button type="reset" class="btn forget">Change</button>
+                        </div>
+                        <input type="text" class="input-fill fill-color" name="licencsno" id="licencsno">
+                    </div>
+                    <div class="input-group align-items-center gap-3">
+                        <input type="checkbox" name="" id="">
+                        <p>I agree Terms of Services</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- commutication section here------- -->
+    <section>
+        <div class="container">
+            <h3 class="profile py-3">Communication preferences</h3>
+            <div class="more-details py-3">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <p class="paragraph2">Email</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <p class="paragraph2">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
+                    elit, sed diam nonummy nibh euismod
+                </p>
+            </div>
+            <div class="more-details py-3">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <p class="paragraph2">SMS</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <p class="paragraph2">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
+                    elit, sed diam nonummy nibh euismod
+                </p>
+            </div>
+            <div class="more-details py-3">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <p class="paragraph2">Notification</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <p class="paragraph2">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
+                    elit, sed diam nonummy nibh euismod
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ’s section here------------- -->
+    <section>
+        <div class="container">
+            <div class="more-details py-3">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <p class="paragraph2">How to Login</p>
+                    
+                </div>
+                <p class="paragraph2">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
+                    elit, sed diam nonummy nibh euismod
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="./vendors/bootstrap.bundle.min.js"> </script>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/slick.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
