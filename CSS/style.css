@@ -28,31 +28,7 @@ body {
     background-size: cover;
 }
 
-/* ------------footer code -----------------*/
-.black-bg {
-    background-color: black;
-    border-radius: 50px 50px 0px 0px;
-}
 
-.privacy,
-a {
-    /* float: right; */
-    gap: 20px;
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-.privacy p {
-    margin-bottom: 0px;
-}
-
-.footer-section {
-    align-items: center;
-}
-
-.footer-logo {
-    width: 100px;
-}
 
 /* ------------------------------------
      nav section start 
@@ -370,7 +346,7 @@ Page 3 Codes Here
 .register-btn {
     color: var(--text-color);
     padding: 5px 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--darkgrey-color);
 }
 
@@ -458,11 +434,10 @@ Page 5 Codes Here
 
 /* btn password change */
 .btn-forget {
-    gap: 260px;
+    gap: 280px;
 }
 
 .forget {
-    margin-bottom: 20px;
     color: skyblue;
 }
 
@@ -484,10 +459,69 @@ input[type=checkbox] {
     border-bottom: 2px solid var(--grey-color);
 }
 
-.more-details>p {
+.more-details>p,
+.faq-section>p {
     font-size: 10px;
 }
 
+.faq-section {
+    border-bottom: 2px solid var(--grey-color);
+}
+
+.faq-icon {
+    font-size: 25px;
+}
+
+
+/* Page 6 Codes here--------------------- */
+.extra-input>label {
+    float: right;
+}
+
+label img {
+    width: 70px;
+    color: var(--darkgrey-color);
+}
+
+
+.register-btn2 {
+    background-color: var(--grey-color);
+    padding: 10px 80px;
+    color: var(--darkgrey-color);
+}
+
+.login-btn {
+    background-color: var(--darkgrey-color);
+    color: var(--text-color);
+}
+
+
+
+/* ------------footer code -----------------*/
+.black-bg {
+    background-color: black;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.privacy,
+a {
+    /* float: right; */
+    gap: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.privacy p {
+    margin-bottom: 0px;
+}
+
+.footer-section {
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px;
+}
 /*------------------------------
         meadia quries
  -------------------------------*/
