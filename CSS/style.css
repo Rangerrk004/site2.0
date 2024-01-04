@@ -5,6 +5,10 @@
 
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ------------------------------------
      custom class for section padding 
 ---------------------------------------*/
@@ -34,25 +38,31 @@ body {
     border-radius: 50px 50px 0px 0px;
 }
 
-.privacy,
-a {
-    /* float: right; */
+.footer-logo {
+    max-width: 100px;
+    margin: 10px;
+}
+
+.privacy {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    text-align: center;
+}
+
+.privacy a {
     gap: 20px;
     color: var(--text-color);
-    text-decoration: none;
+
 }
 
 .privacy p {
     margin-bottom: 0px;
 }
 
-.footer-section {
-    align-items: center;
-}
 
-.footer-logo {
-    width: 100px;
-}
+
+
 
 /* ------------------------------------
      nav section start 
@@ -124,15 +134,22 @@ Catogory section here
     text-align: center;
 }
 
-.col-1 {
-    flex: 0 0 auto;
-    width: 12.333333%;
+.menu-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    /* border: 2px solid black; */
 }
 
 .menu-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* border: 2px solid red; */
+    margin: 10px;
+    min-width: 10%;
 }
 
 .menu-list img {
@@ -162,18 +179,28 @@ Catogory section here
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
-    gap: 10px;
+}
+
+.menulites p {
+    font-size: 18px !important;
 }
 
 /*--------------------------------
          New Offer section start 
     ----------------------------------*/
+.offer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .card {
     background-color: var(--grey-color);
     height: 225px;
     box-shadow: var(--box-shadow);
-    border-radius: 23px 23px 0px 0px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .card-title,
@@ -190,10 +217,7 @@ Catogory section here
     color: blue;
 }
 
-.offer-section {
-    justify-content: center;
-    gap: 20px;
-}
+
 
 /* ------------------------------------
      write to us section start 
@@ -213,8 +237,8 @@ label {
 
 .box {
     padding: 20px;
+    padding-bottom: 45px;
     border-radius: 10px;
-    height: 150px;
     background-color: var(--grey-color);
 }
 
