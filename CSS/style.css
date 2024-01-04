@@ -451,9 +451,6 @@ Page 5 Codes Here
     max-width: 440px;
 }
 
-.input-group label {
-    /* margin-bottom: 20px; */
-}
 
 .fill-color {
     border-bottom: 2px solid var(--paragraph-text-co);
