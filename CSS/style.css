@@ -21,7 +21,13 @@ body {
     background-size: cover;
 }
 
-
+h1,
+h2,
+h3,
+h5,
+p {
+    color: var(--text-color);
+}
 
 a {
     text-decoration: none;
@@ -41,16 +47,18 @@ button {
 
 .cta-btn1 {
     padding: 5px 50px;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: var(--darkgrey-color);
     color: var(--text-color);
 }
 
 .cta-btn2 {
     background-color: var(--grey-color);
-    padding: 10px 80px;
+    padding: 10px 30px;
+    border-radius: 20px;
     color: var(--darkgrey-color);
 }
+
 
 /* ------------------------------------
      nav section start 
@@ -82,7 +90,7 @@ button {
     color: white;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     color: #FFFFFF;
 }
 
@@ -443,70 +451,46 @@ label {
 }
 
 /* ///-------------------
-Page 5 Codes Here
+Profile page Codes Here
 ------------------------------------- */
 .profile-card {
-    width: 600px;
-}
-
-.addbtn {
-    background-color: var(--grey-color);
-    padding: 10px 60px;
+    max-width: 600px;
+    margin: 10px;
 }
 
 .wallet-btnbody {
+    height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 220px;
-
-}
-
-.addbtn p {
-    color: var(--darkgrey-color);
-    font-size: 20px;
-    margin-bottom: 0px;
-}
-
-.btn-done {
-    background-color: var(--grey-color);
-    padding: 10px 30px;
-    color: var(--darkgrey-color);
-}
-
-.profile {
-    font-size: 30px;
-    color: var(--text-color);
+    align-items: center;
 }
 
 .input-group {
     max-width: 440px;
 }
 
-
-.fill-color {
+.profile-from input {
     background-color: transparent;
     border-bottom: 2px solid var(--paragraph-text-co);
 }
 
-/* btn password change */
-.btn-forget {
-    gap: 260px;
+.accordion-button {
+    background: none;
 }
 
-.forget {
-    color: skyblue;
+.accordion-button:not(.collapsed) {
+    background: none;
+    box-shadow: none;
 }
 
-input[type=checkbox] {
-    width: 20px;
-    height: 20px;
+.accordion-button:focus {
+    box-shadow: none;
 }
 
-.input-group p {
-    margin-bottom: 0px;
-    color: var(--grey-color);
+.accordion-item {
+    border: none;
+    border-bottom: 2px solid #fff;
 }
-
 
 
 /* ---------------------- */
@@ -527,7 +511,9 @@ input[type=checkbox] {
 .faq-icon {
     font-size: 25px;
 }
-.accordion-item, .accordion-header{
+
+.accordion-item,
+.accordion-header {
     background-color: transparent;
 }
 
@@ -541,12 +527,6 @@ label img {
     color: var(--darkgrey-color);
 }
 
-
-.cta-btn2 {
-    background-color: var(--grey-color);
-    padding: 10px 80px;
-    color: var(--darkgrey-color);
-}
 
 .login-btn {
     background-color: var(--darkgrey-color);
