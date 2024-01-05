@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page 6</title>
+    <title>Register</title>
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -71,61 +71,66 @@
     <section>
         <div class="container">
             <!-- form sec here -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="d-flex justify-content-center py-4">
-                        <h4 class="titel">Register</h4>
-                    </div>
-                    <div class="d-flex justify-content-center flex-wrap">
-                        <div class="input-group mb-4">
-                            <label for="companyname"><i class="fa-regular fa-user"></i> Company
-                                Name</label>
-                            <input type="text" class="input-fill fill-color" name="companyname" id="companyname"
-                                required>
-
+            <form action="" id="register" autocomplete="off">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center py-4">
+                            <h4 class="titel">Register</h4>
                         </div>
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="input-group mb-4">
+                                <label for="cname"><i class="fa-regular fa-user"></i> Company
+                                    Name</label>
+                                <input type="text" class="input-fill fill-color" name="cname" id="cname" required>
 
-                        <div class="input-group mb-4">
-                            <label for="phone"><i class="fa-solid fa-phone"></i> Mobile</label>
-                            <input type="number" class="input-fill fill-color" name="phone" id="phone">
-                        </div>
+                            </div>
 
-                        <div class="input-group mb-4">
-                            <label for="email"><i class="fa-regular fa-envelope"></i> Email</label>
-                            <input type="email" class="input-fill fill-color" name="email" id="email" required>
-                        </div>
+                            <div class="input-group mb-4">
+                                <label for="mobile"><i class="fa-solid fa-phone"></i> Mobile</label>
+                                <input type="number" class="input-fill fill-color" name="mobile" id="mobile">
+                            </div>
 
-                        <div class="input-group mb-4">
-                            <label for="crno"><i class="fa-regular fa-user"></i> QID.No</label>
-                            <input type="text" class="input-fill fill-color" name="crno" id="crno">
-                        </div>
-                        <div class="input-group d-flex justify-content-center align-items-center gap-3 py-5">
-                            <input type="checkbox" name="" id="">
-                            <p>I agree Terms of Services</p>
-                        </div>
-                        <button class="btn cta-btn2">Register</button>
-                    </div>
-                </div>
+                            <div class="input-group mb-4">
+                                <label for="gmail"><i class="fa-regular fa-envelope"></i> Email</label>
+                                <input type="gmail" class="input-fill fill-color" name="gmail" id="gmail" required>
+                            </div>
 
-                <div class="col-lg-6">
-                    <div class="d-flex justify-content-center py-4">
-                        <h4 class="titel">Login</h4>
-                    </div>
-                    <div class="d-flex justify-content-center flex-wrap">
-                        <div class="input-group mb-4">
-                            <label for="crno"><i class="fa-regular fa-user"></i> QID.No / Testaahel card number</label>
-                            <input type="text" class="input-fill fill-color" name="crno" id="crno">
-                        </div>
+                            <div class="input-group mb-4">
+                                <label for="qid"><i class="fa-regular fa-user"></i> QID.No</label>
+                                <input type="text" class="input-fill fill-color" name="qid" id="qid">
+                            </div>
+                            <div class="input-group d-flex justify-content-center align-items-center gap-3 py-5">
+                                <input type="checkbox" name="" id="">
+                                <p>I agree Terms of Services</p>
+                            </div>
+                            <button class="btn cta-btn2">Register</button>
+            </form>
+        </div>
+        </div>
 
-                        <div class="input-group mb-4">
-                            <label for="licencsno"><i class="fa-solid fa-lock"></i> Password</label>
-                            <input type="text" class="input-fill fill-color" name="licencsno" id="licencsno">
-                        </div>
-                        <button class="btn cta-btn2 login-btn mt-4">Log In</button>
-                    </div>
-                </div>
-
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="d-flex justify-content-center py-4">
+                <h4 class="titel">Login</h4>
             </div>
+            <div class="d-flex justify-content-center flex-wrap">
+                <form autocomplete="off" id="login">
+                    <div class="input-group mb-4">
+                        <label for="testaahel"><i class="fa-regular fa-user"></i> QID.No / Testaahel card
+                            number</label>
+                        <input type="text" class="input-fill fill-color" name="testaahel" id="testaahel" required>
+                    </div>
+
+                    <div class="input-group mb-4">
+                        <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                        <input type="text" class="input-fill fill-color" name="password" id="password" required>
+                    </div>
+                    <button class="btn cta-btn2 login-btn mt-4">Log In</button>
+                </form>
+            </div>
+        </div>
+
+        </div>
+
         </div>
 
     </section>
@@ -142,22 +147,23 @@
                 </div>
             </div>
 
+            <!-- registior form   -->
             <div class="register-section m-auto">
                 <div class="registerbody">
                     <form class="register" id="registerForm" autocomplete="off" method="post">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="input-group mb-4">
-                                    <label for="companyname"><img src="./images/logo.png" alt=""> <i
+                                    <label for="cname"><img src="./images/logo.png" alt=""> <i
                                             class="fa-regular fa-user"></i></label>
-                                    <input type="text" class="input-fill" name="companyname" id="companyname" required>
+                                    <input type="text" class="input-fill" name="cname" id="cname" required>
 
                                 </div>
 
                                 <div class="input-group mb-4">
                                     <label for="companyname"><i class="fa-regular fa-user"></i> Company
                                         Name</label>
-                                    <input type="text" class="input-fill" name="companyname" id="companyname" required>
+                                    <input type="text" class="input-fill" name="companyname" id="cname" required>
 
                                 </div>
                                 <div class="input-group mb-4">
@@ -257,7 +263,10 @@
     <script src="./vendors/bootstrap.bundle.min.js"> </script>
     <script src="vendors/jquery.min.js"></script>
     <script src="vendors/slick.min.js"></script>
-    <script src="./JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script src="./js/validation.js"></script>
+
 </body>
 
 </html>
