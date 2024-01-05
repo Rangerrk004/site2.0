@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/slick-slider.css" />
 
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
 </head>
 
 <body>
@@ -70,67 +71,67 @@
 
     <section class="py-4">
         <div class="container">
-            <!-- form sec here -->
-            <form action="" id="register" autocomplete="off">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="d-flex justify-content-center py-4">
-                            <h4 class="titel">Register</h4>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="d-flex justify-content-center py-4">
+                        <h4 class="titel">Register</h4>
+                    </div>
+                    <!-- form sec here -->
+                    <form class="profile-from" action="" id="register" autocomplete="off">
+
+                        <div class="input-group mb-4">
+                            <label for="cname"><i class="fa-regular fa-user"></i> Company
+                                Name</label>
+                            <input type="text" class="input-fill fill-color" name="cname" id="cname" required>
+
                         </div>
-                        <div class="d-flex justify-content-center flex-wrap">
-                            <div class="input-group mb-4">
-                                <label for="cname"><i class="fa-regular fa-user"></i> Company
-                                    Name</label>
-                                <input type="text" class="input-fill fill-color" name="cname" id="cname" required>
+                        <div class="input-group mb-4">
+                            <label for="mobile"><i class="fa-solid fa-phone"></i> Mobile</label>
+                            <input type="number" class="input-fill fill-color" name="mobile" id="mobile">
+                        </div>
 
-                            </div>
+                        <div class="input-group mb-4">
+                            <label for="gmail"><i class="fa-regular fa-envelope"></i> Email</label>
+                            <input type="gmail" class="input-fill fill-color" name="gmail" id="gmail" required>
+                        </div>
 
-                            <div class="input-group mb-4">
-                                <label for="mobile"><i class="fa-solid fa-phone"></i> Mobile</label>
-                                <input type="number" class="input-fill fill-color" name="mobile" id="mobile">
-                            </div>
+                        <div class="input-group mb-4">
+                            <label for="qid"><i class="fa-regular fa-user"></i> QID.No</label>
+                            <input type="text" class="input-fill fill-color" name="qid" id="qid">
+                        </div>
+                        <div class="input-group d-flex justify-content-center align-items-center gap-3 ">
+                            <input type="checkbox" name="" id="">
+                            <p>I agree Terms of Services</p>
+                        </div>
 
-                            <div class="input-group mb-4">
-                                <label for="gmail"><i class="fa-regular fa-envelope"></i> Email</label>
-                                <input type="gmail" class="input-fill fill-color" name="gmail" id="gmail" required>
-                            </div>
+                        <div class=" d-flex justify-content-center align-items-center gap-3 ">
+                            <button type="submit" class="cta-btn2">Register</button>
+                        </div>
+                    </form>
+                </div>
 
-                            <div class="input-group mb-4">
-                                <label for="qid"><i class="fa-regular fa-user"></i> QID.No</label>
-                                <input type="text" class="input-fill fill-color" name="qid" id="qid">
-                            </div>
-                            <div class="input-group d-flex justify-content-center align-items-center gap-3 py-5">
-                                <input type="checkbox" name="" id="">
-                                <p>I agree Terms of Services</p>
-                            </div>
-                            <button class="btn cta-btn2">Register</button>
-            </form>
-        </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="d-flex justify-content-center py-4">
-                <h4 class="titel">Login</h4>
-            </div>
-            <div class="d-flex justify-content-center flex-wrap">
-                <form autocomplete="off" id="login">
-                    <div class="input-group mb-4">
-                        <label for="testaahel"><i class="fa-regular fa-user"></i> QID.No / Testaahel card
-                            number</label>
-                        <input type="text" class="input-fill fill-color" name="testaahel" id="testaahel" required>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="d-flex justify-content-center py-4">
+                        <h4 class="titel">Login</h4>
                     </div>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <form class="profile-from" autocomplete="off" id="login">
+                            <div class="input-group mb-4">
+                                <label for="testaahel"><i class="fa-regular fa-user"></i> QID.No / Testaahel card
+                                    number</label>
+                                <input type="text" class="input-fill fill-color" name="testaahel" id="testaahel"
+                                    required>
+                            </div>
 
-                    <div class="input-group mb-4">
-                        <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
-                        <input type="text" class="input-fill fill-color" name="password" id="password" required>
+                            <div class="input-group mb-4">
+                                <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                                <input type="text" class="input-fill fill-color" name="password" id="password" required>
+                            </div>
+                            <button type="submit" class="cta-btn2  mt-4">Log In</button>
+                        </form>
                     </div>
-                    <button class="btn cta-btn2 login-btn mt-4">Log In</button>
-                </form>
+                </div>
             </div>
-        </div>
-
-        </div>
-
         </div>
 
     </section>
