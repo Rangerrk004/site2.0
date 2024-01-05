@@ -108,45 +108,46 @@
             </div>
 
             <div class="register-section m-auto">
-                <div class="registerbody d-flex justify-content-between">
+                <div class="registerbody">
                     <form class="register" id="registerForm" autocomplete="off" method="post">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <div class="input-group mb-4">
-                                    <label for="companyname"> Company Name</label>
+                                    <label for="companyname"><i class="fa-regular fa-user"></i> Company
+                                        Name</label>
                                     <input type="text" class="input-fill" name="companyname" id="companyname" required>
 
                                 </div>
                                 <div class="input-group mb-4">
-                                    <label for="email">Email</label>
+                                    <label for="email"><i class="fa-regular fa-envelope"></i> Email</label>
                                     <input type="email" class="input-fill" name="email" id="email" required>
                                 </div>
                                 <div class="input-group mb-4">
-                                    <label for="phone">Mobile</label>
+                                    <label for="phone"><i class="fa-solid fa-phone"></i> Mobile</label>
                                     <input type="number" class="input-fill" name="phone" id="phone">
                                 </div>
                                 <div class="input-group mb-4">
                                     <label for="crno">CR.No</label>
                                     <input type="text" class="input-fill" name="crno" id="crno">
                                 </div>
-                                <div class="input-group mb-4">
+                                <div class="input-group">
                                     <label for="licencsno">Licencs.No</label>
                                     <input type="text" class="input-fill" name="licencsno" id="licencsno">
                                 </div>
                             </div>
+                            <!-- add file sec -->
                             <div class="col-md-6 col-sm-12">
 
-
                                 <div class="upload-btn-wrapper mb-4">
-
-                                    <div class="btn add-pic">
-                                        <div>
-                                            <label for="myfile">Attach CR</label>
-                                            <input type="file" accept=".png, .jpg, .jpeg, .pdf" name="myfile"
-                                                id="myfile">
+                                    <div>
+                                        <label for="myfile">Attach CR</label>
+                                        <div class="btn add-pic">
+                                            <div>
+                                                <input type="file" accept=".png, .jpg, .jpeg, .pdf" name="myfile"
+                                                    id="myfile">
+                                            </div>
                                         </div>
                                     </div>
-
                                     <i class="fa-regular fa-file"></i>
                                 </div>
 
@@ -160,27 +161,29 @@
                                     </div>
                                     <i class="fa-regular fa-file"></i>
                                 </div>
+
+                                <!-- dropdown here----// -->
                                 <div class="upload-btn-wrapper mb-4">
 
-                                    <div>
-                                        <label for="catogery">Busniess Catogery</label>
-                                        <div class="btn add-pic">
-                                            <input type="file" id="catogery" name="catogery"
-                                                accept=".png, .jpg, .jpeg, .pdf">
-                                        </div>
+                                    <div class="dropdown">
+                                        <button class="btn cta-btn dropdown-toggle" type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Business Catogery
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Most Recomended</a></li>
+                                            <li><a class="dropdown-item" href="#">Most Propuler</a></li>
+                                        </ul>
+
                                     </div>
-                                    <i class="fa-regular fa-file"></i>
                                 </div>
-                                <button type="submit" class="btn register-btn">Register</button>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button type="submit" class="btn register-btn">Register</button>
+                                </div>
 
                             </div>
 
                         </div>
-
-
-
-
-
                     </form>
 
                 </div>
@@ -223,12 +226,42 @@
             </div>
         </div>
     </section>
+
+    <!-- app download captcher------ -->
     <section>
         <div class="container">
             <div class="categori d-flex justify-content-center">
                 <div class="categori-body">
                     <h4 class="titel">Download App</h4>
 
+                    <div class="applink d-flex justify-content-between align-items-center">
+                        <div class="linkbody">
+                            <div class="d-flex justify-content-center">
+                                <img src="./images/capchar.png" alt="">
+                            </div>
+                            <div class="applink-title d-flex">
+                                <i class="fa-brands fa-apple"></i>
+                                <div class="link">
+                                    <p>Download on the</p>
+                                    <h6>App Store</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="linkbody">
+                            <div class="d-flex justify-content-center">
+                                <img src="./images/capchar.png" alt="">
+                            </div>
+                            <div class="applink-title d-flex">
+                                <i class="fa-brands fa-google-play"></i>
+                                <div class="link">
+                                    <p>Available on the</p>
+                                    <h6>Google Play</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
