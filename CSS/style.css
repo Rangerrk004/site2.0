@@ -118,7 +118,8 @@ section {
 .searchbar-2 {
     width: 100% !important;
     display: flex;
-    max-width: 500px;  margin: auto;
+    max-width: 500px;
+    margin: auto;
 }
 
 
@@ -335,8 +336,11 @@ label {
 }
 
 /* Page 3 Codes Here-------------------------- */
+.university {
+    padding: 30px 20px;
+}
+
 .menuimg img {
-    max-width: 526px;
     margin-bottom: 30px;
 }
 
@@ -347,8 +351,20 @@ label {
 /*--------------
  Page4 codes here
  ---------------------- */
+.map-box {
+    text-align: center;
+    padding: 1rem;
+}
+
+.map-box iframe {
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+
+}
+
 .register-section {
-    width: 820px;
+    max-width: 820px;
     border-radius: 20px;
     background-color: var(--grey-color);
     box-shadow: var(--box-shadow);
