@@ -43,7 +43,18 @@ section {
     padding: 50px 0px;
 }
 
+.cta-btn1 {
+    padding: 5px 50px;
+    border-radius: 5px;
+    background-color: var(--darkgrey-color);
+    color: var(--text-color);
+}
 
+.cta-btn2 {
+    background-color: var(--grey-color);
+    padding: 10px 80px;
+    color: var(--darkgrey-color);
+}
 
 /* ------------------------------------
      nav section start 
@@ -422,14 +433,6 @@ label {
 }
 
 
-
-.register-btn {
-    color: var(--text-color);
-    padding: 5px 50px;
-    border-radius: 5px;
-    background-color: var(--darkgrey-color);
-}
-
 /* ////////------------- */
 .applink {
     margin-top: 50px;
@@ -565,7 +568,7 @@ label img {
 }
 
 
-.register-btn2 {
+.cta-btn2 {
     background-color: var(--grey-color);
     padding: 10px 80px;
     color: var(--darkgrey-color);
