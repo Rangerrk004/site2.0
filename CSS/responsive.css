@@ -5,7 +5,14 @@
 @media (max-width: 575.98px) {}
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .searchheading{
+        margin: auto;
+    }
+    .search-box {
+        padding: 20px;
+    }
+}
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {

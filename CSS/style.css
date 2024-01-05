@@ -27,6 +27,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+}
+
 /* ------------------------------------
      custom class for section padding 
 ---------------------------------------*/
@@ -64,27 +68,57 @@ section {
     color: white;
 }
 
+
+
+/* seach bar section is here  */
 .searchbar {
     display: flex;
-    justify-content: center;
+    /* max-width: 500px; */
+    margin: auto;
+}
+
+.searchbar input {
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 .searchbar i {
     margin-top: 6px;
     margin-left: -65px;
-}
-
-.searchbar button {
-    border: none;
-}
-
-.fa-magnifying-glass {
     color: grey;
 }
 
-.form-control {
-    width: 40%;
+
+/* -----  2nd searchbox style is here  */
+.search-box {
+    background-color: var(--box-background);
+    border-radius: 30px;
 }
+
+.searchheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 350px;
+    gap: 20px;
+    color: var(--grey-color);
+    background-color: var(--darkgrey-color);
+    border-radius: 30px;
+    margin-left: -10px;
+    height: 90px;
+    padding: 1rem;
+
+}
+
+.searchheading img {
+    max-width: 50px;
+}
+
+.searchbar-2 {
+    width: 100% !important;
+}
+
 
 /* ------------footer code -----------------*/
 
@@ -95,7 +129,7 @@ section {
 
 .privacy {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: end;
     text-align: center;
 }
@@ -274,34 +308,7 @@ label {
 }
 
 /* /////---------------------Page 2 Codes Start Here---------------------------/// */
-.search-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--box-background);
-    border-radius: 10px;
-    height: 90px;
-}
 
-.searchbody {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 90px;
-    gap: 20px;
-    color: var(--grey-color);
-    background-color: var(--darkgrey-color);
-    border-radius: 10px;
-}
-
-.searchbody img {
-    width: 50px;
-}
-
-.searchbtn-2 {
-    -width: 720px;
-}
 
 /* colleges -----------*/
 .university h3 {
