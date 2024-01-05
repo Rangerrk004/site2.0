@@ -6,6 +6,7 @@
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
     .searchheading {
         margin: auto;
     }
@@ -21,6 +22,9 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .navbar-nav{
+        gap: 20px;
+    }
 
     /* indexpage style is here  */
     .menu-list {
@@ -29,9 +33,6 @@
 
     .footer-left {
         text-align: center;
-    }
-    .btn-forget{
-        gap: 200px;
     }
 }
 
