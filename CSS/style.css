@@ -39,10 +39,6 @@ button {
     border-radius: 50px 50px 0px 0px;
 }
 
-section {
-    padding: 50px 0px;
-}
-
 .cta-btn1 {
     padding: 5px 50px;
     border-radius: 5px;
@@ -555,7 +551,9 @@ input[type=checkbox] {
 .faq-icon {
     font-size: 25px;
 }
-
+.accordion-item, .accordion-header{
+    background-color: transparent;
+}
 
 /* Page 6 Codes here--------------------- */
 .extra-input>label {
