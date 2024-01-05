@@ -1,17 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-/* ------------------------------------
-     custom class for section padding 
----------------------------------------*/
-section {
-    padding: 50px 0px;
-}
-
 :root {
     --darkgrey-color: #645353e9;
     --box-background: #c5b8b8cb;
@@ -21,6 +7,13 @@ section {
     --grey-color: rgb(223, 221, 221);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body {
     background-image: url(../assets/Background.png);
     /* background: linear-gradient(to bottom left, rgb(0, 0, 0), grey, rgb(234, 234, 183)); */
@@ -28,31 +21,29 @@ body {
     background-size: cover;
 }
 
-/* ------------footer code -----------------*/
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+/* ------------------------------------
+     custom class for section padding 
+---------------------------------------*/
 .black-bg {
     background-color: black;
     border-radius: 50px 50px 0px 0px;
 }
 
-.privacy,
-a {
-    /* float: right; */
-    gap: 20px;
-    color: var(--text-color);
-    text-decoration: none;
+section {
+    padding: 50px 0px;
 }
 
-.privacy p {
-    margin-bottom: 0px;
-}
 
-.footer-section {
-    align-items: center;
-}
-
-.footer-logo {
-    width: 100px;
-}
 
 /* ------------------------------------
      nav section start 
@@ -77,27 +68,85 @@ a {
     color: white;
 }
 
+
+
+/* seach bar section is here  */
 .searchbar {
     display: flex;
-    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.searchbar input {
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 .searchbar i {
     margin-top: 6px;
     margin-left: -65px;
-}
-
-.searchbar button {
-    border: none;
-}
-
-.fa-magnifying-glass {
     color: grey;
 }
 
-.form-control {
-    width: 40%;
+
+/* -----  2nd searchbox style is here  */
+.search-box {
+    background-color: var(--box-background);
+    border-radius: 30px;
 }
+
+.searchheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    height: 100%;
+    gap: 20px;
+    color: var(--grey-color);
+    background-color: var(--darkgrey-color);
+    border-radius: 30px;
+    margin-left: -10px;
+    height: 90px;
+    padding: 1rem;
+
+}
+
+.searchheading img {
+    max-width: 50px;
+}
+
+.searchbar-2 {
+    width: 100% !important;
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+/* ------------footer code -----------------*/
+
+.footer-logo {
+    max-width: 100px;
+    margin: 10px;
+}
+
+.privacy {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    text-align: center;
+}
+
+.privacy a {
+    gap: 20px;
+    color: var(--text-color);
+
+}
+
+.privacy p {
+    margin-bottom: 0px;
+}
+
 
 /* -------------------
 Catogory section here
@@ -124,21 +173,38 @@ Catogory section here
     text-align: center;
 }
 
-.col-1 {
-    flex: 0 0 auto;
-    width: 12.333333%;
+.menu-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
 }
 
 .menu-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
+    padding: 20px;
+    min-width: 10%;
+    transition: all 0.3s;
+}
+
+.menu-list:hover {
+    background-color: var(--box-background);
+    border-radius: 30%;
+    transition: all 0.3s;
 }
 
 .menu-list img {
     margin-bottom: 15px;
     width: 40px;
     height: 40px;
+}
+
+.menu-list p {
+    margin: 0;
 }
 
 /* 2img width fixing code */
@@ -156,24 +222,35 @@ Catogory section here
 .fa-angle-right {
     font-size: 12px;
     color: var(--text-color);
+    text-align: center;
 }
 
 .menulites {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
-    gap: 10px;
+}
+
+.menulites p {
+    font-size: 18px !important;
 }
 
 /*--------------------------------
          New Offer section start 
     ----------------------------------*/
+.offer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .card {
     background-color: var(--grey-color);
     height: 225px;
     box-shadow: var(--box-shadow);
-    border-radius: 23px 23px 0px 0px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .card-title,
@@ -190,10 +267,7 @@ Catogory section here
     color: blue;
 }
 
-.offer-section {
-    justify-content: center;
-    gap: 20px;
-}
+
 
 /* ------------------------------------
      write to us section start 
@@ -213,8 +287,8 @@ label {
 
 .box {
     padding: 20px;
+    padding-bottom: 45px;
     border-radius: 10px;
-    height: 150px;
     background-color: var(--grey-color);
 }
 
@@ -237,34 +311,7 @@ label {
 }
 
 /* /////---------------------Page 2 Codes Start Here---------------------------/// */
-.search-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--box-background);
-    border-radius: 10px;
-    height: 90px;
-}
 
-.searchbody {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 90px;
-    gap: 20px;
-    color: var(--grey-color);
-    background-color: var(--darkgrey-color);
-    border-radius: 10px;
-}
-
-.searchbody img {
-    width: 50px;
-}
-
-.searchbtn-2 {
-    width: 720px;
-}
 
 /* colleges -----------*/
 .university h3 {
@@ -288,11 +335,12 @@ label {
     color: var(--paragraph-text-co);
 }
 
-/*----------------------- 
-Page 3 Codes Here
----------------------------------------------- */
+/* Page 3 Codes Here-------------------------- */
+.university {
+    padding: 30px 20px;
+}
+
 .menuimg img {
-    max-width: 526px;
     margin-bottom: 30px;
 }
 
@@ -302,9 +350,21 @@ Page 3 Codes Here
 
 /*--------------
  Page4 codes here
- ------------------------------------ */
+ ---------------------- */
+.map-box {
+    text-align: center;
+    padding: 1rem;
+}
+
+.map-box iframe {
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+
+}
+
 .register-section {
-    width: 850px;
+    max-width: 820px;
     border-radius: 20px;
     background-color: var(--grey-color);
     box-shadow: var(--box-shadow);
@@ -317,7 +377,6 @@ Page 3 Codes Here
 
 
 .register label {
-    margin-top: -20px;
     color: var(--darkgrey-color);
     /* font-weight: 500; */
 }
@@ -327,12 +386,12 @@ Page 3 Codes Here
     outline: 0;
     border: 0;
     border-bottom: 2px solid var(--darkgrey-color);
-    background-color: transparent;
+    background-color: var(--grey-color);
 }
 
 .upload-btn-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     height: 45px;
@@ -347,6 +406,13 @@ Page 3 Codes Here
     /* padding-left: 20px; */
 }
 
+.add-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 70px 0px 70px;
+}
+
 .upload-btn-wrapper input[type=file] {
     font-size: 20px;
     position: absolute;
@@ -355,17 +421,7 @@ Page 3 Codes Here
     opacity: 0;
 }
 
-.btn:focus {
-    box-shadow: none;
-}
 
-.dropdown-toggle::after {
-    margin-left: 175px;
-}
-
-.cta-btn {
-    padding: 0px 0px;
-}
 
 .register-btn {
     color: var(--text-color);
@@ -373,135 +429,3 @@ Page 3 Codes Here
     border-radius: 10px;
     background-color: var(--darkgrey-color);
 }
-
-/* ////////------------- */
-.applink {
-    margin-top: 50px;
-    gap: 110px;
-}
-
-.applink-title {
-    background-color: black;
-    width: 150px;
-    padding: 5px 10px;
-    margin-top: 20px;
-    align-items: center;
-    border-radius: 5px;
-    gap: 10px;
-}
-
-.link>p {
-    font-size: 10px;
-    margin-bottom: 0px;
-}
-
-.link>h6 {
-    margin-bottom: 0px;
-}
-
-.applink-title>i {
-    font-size: 25px;
-}
-
-.linkbody img {
-    display: flex;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-}
-
-
-/* ///-------------------
-Page 5 Codes Here
-------------------------------------- */
-.profile-card {
-    width: 600px;
-}
-
-.addbtn {
-    background-color: var(--grey-color);
-    padding: 10px 60px;
-}
-
-.wallet-btnbody {
-    display: flex;
-    justify-content: center;
-    margin-top: 220px;
-
-}
-
-.addbtn p {
-    color: var(--darkgrey-color);
-    font-size: 20px;
-    margin-bottom: 0px;
-}
-
-.btn-done {
-    background-color: var(--grey-color);
-    padding: 10px 30px;
-    color: var(--darkgrey-color);
-}
-
-.profile {
-    font-size: 30px;
-    color: var(--text-color);
-}
-
-.input-group {
-    max-width: 440px;
-}
-
-
-.fill-color {
-    border-bottom: 2px solid var(--paragraph-text-co);
-}
-
-/* btn password change */
-.btn-forget {
-    gap: 260px;
-}
-
-.forget {
-    margin-bottom: 20px;
-    color: skyblue;
-}
-
-input[type=checkbox] {
-    width: 20px;
-    height: 20px;
-}
-
-.input-group p {
-    margin-bottom: 0px;
-    color: var(--grey-color);
-}
-
-
-
-/* ---------------------- */
-.more-details {
-    max-width: 380px;
-    border-bottom: 2px solid var(--grey-color);
-}
-
-.more-details>p {
-    font-size: 10px;
-}
-
-/*------------------------------
-        meadia quries
- -------------------------------*/
-
-@media (max-width: 575.98px) {}
-
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {}
-
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
-
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
-
-/* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}

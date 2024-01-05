@@ -20,52 +20,54 @@
 
 <body>
 
-    <div class="subheader">
-        <div class="container">
-            <div class="image-logo d-flex justify-content-between">
-                <img src="./images/logo.png" class="img-fluid " alt="">
-                <img src="./images/logo2.png" class="img-fluid " alt="">
-            </div>
-        </div>
-    </div>
-
     <header>
-        <nav class="navbar navbar-expand-lg bg-light  bg-transparent">
-            <div class="container justify-content-center">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggle-btn"><i class="fa-solid fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav text-center mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">New Offers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Location Map</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Register as Partner</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Testaahel</a>
-                        </li>
-                    </ul>
+        <div class="subheader">
+            <div class="container">
+                <div class="image-logo d-flex justify-content-between">
+                    <img src="./images/logo.png" class="img-fluid " alt="">
+                    <img src="./images/logo2.png" class="img-fluid " alt="">
                 </div>
             </div>
-        </nav>
-        <div class="searchbar mt-4">
-            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-            <button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-light  bg-transparent">
+                <div class="container justify-content-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggle-btn"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-center mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">New Offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Location Map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Register as Partner</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Testaahel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="searchbar mt-4" style="max-width: 525px;">
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -80,22 +82,16 @@
                         veniam quis nostrud.</p>
                 </div>
             </div>
-        </div>
-
-    </section>
-
-    <!-- Search Bar-------------//-->
-    <section>
-        <div class="container">
-            <div class="searchbar">
-                <input class="form-control searchbtn-2 me-3" type="search" placeholder="Search..." aria-label="Search">
-                <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+            <div class="map-box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.0184866178893!2d88.50722717538858!3d25.404191777578262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb47bffc203d01%3A0x5e87f9b37425bf4c!2sBishal%20Tech%20Academy%20%7C%20Dakshin%20Dinajpur&#39;s%20Most%20Advance%20Computer%20Training%20center!5e0!3m2!1sen!2sin!4v1704438621484!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-    </section>
 
+    </section>
+    <!-- from section is her3  -->
     <section>
         <div class="container">
             <div class="categori d-flex justify-content-center">
@@ -234,51 +230,61 @@
                 <div class="categori-body">
                     <h4 class="titel">Download App</h4>
 
-                    <div class="applink d-flex justify-content-between align-items-center">
-                        <div class="linkbody">
-                            <div class="d-flex justify-content-center">
-                                <img src="./images/capchar.png" alt="">
-                            </div>
-                            <div class="applink-title d-flex">
-                                <i class="fa-brands fa-apple"></i>
-                                <div class="link">
-                                    <p>Download on the</p>
-                                    <h6>App Store</h6>
+                    <div class="row mt-4">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="linkbody">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./images/capchar.png" alt="">
+                                </div>
+                                <div class="applink-title d-flex">
+                                    <i class="fa-brands fa-apple"></i>
+                                    <div class="link">
+                                        <p>Download on the</p>
+                                        <h6>App Store</h6>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="linkbody">
-                            <div class="d-flex justify-content-center">
-                                <img src="./images/capchar.png" alt="">
-                            </div>
-                            <div class="applink-title d-flex">
-                                <i class="fa-brands fa-google-play"></i>
-                                <div class="link">
-                                    <p>Available on the</p>
-                                    <h6>Google Play</h6>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="linkbody">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./images/capchar.png" alt="">
+                                </div>
+                                <div class="applink-title d-flex">
+                                    <i class="fa-brands fa-google-play"></i>
+                                    <div class="link">
+                                        <p>Available on the</p>
+                                        <h6>Google Play</h6>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="black-bg">
-        <div class="container">
-            <div class="footer-section d-flex justify-content-between">
-                <img src="./images/logo.png" class="footer-logo" alt="">
-                <div class="privacy d-flex aline-items-center">
-                    <p>Terms & Conditions</p>
-                    <p>Privacy Policy</p>
-                    <a href="#">Download app</a>
+    <footer>
+        <div class="black-bg py-4">
+            <div class="container">
+                <div class=" row">
+                    <div class="col-md-6 col-sm-12 footer-left">
+                        <img src="./images/logo.png" class="footer-logo" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="privacy mt-3">
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Download app</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="./vendors/bootstrap.bundle.min.js"> </script>
