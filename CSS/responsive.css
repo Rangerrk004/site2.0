@@ -25,6 +25,14 @@
     .wallet-btnbody{
         margin-top: 60px !important;
     }
+
+    .upload-btn-wrapper input[type=file] {
+        font-size: 15px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
 }
 
 /* // Medium devices (tablets, less than 992px) */
