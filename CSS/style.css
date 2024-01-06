@@ -1,10 +1,12 @@
 :root {
-    --darkgrey-color: #645353e9;
+    --darkgrey-color: #776F6C;
     --box-background: #c5b8b8cb;
+
     --text-color: #FFFFFF;
+    --paragraph-text-co: #E0E0E0;
+    --grey-color: #E0E0E0;
+    --text2-color: #776F6C;
     --box-shadow: 1px 1px 9px rgba(62, 60, 60, 0.55);
-    --paragraph-text-co: #e3dfdf;
-    --grey-color: rgb(223, 221, 221);
 }
 
 * {
@@ -185,7 +187,7 @@ Catogory section here
 
 .categori-body,
 .paragraph {
-    color: var(--paragraph-text-co);
+    color: var(--grey-color);
     font-weight: 500;
 }
 
@@ -318,8 +320,8 @@ label {
     background-color: var(--grey-color);
 }
 
-.box>p .fa-paper-plane {
-    color: var(--darkgrey-color);
+.box p ,.fa-paper-plane {
+    color: var(--text2-color);
 }
 
 .btn-1 {
@@ -411,8 +413,8 @@ label {
     width: 100%;
     outline: 0;
     border: 0;
-    border-bottom: 2px solid var(--darkgrey-color);
-    background-color: var(--grey-color);
+    border-bottom: 2px solid var(--text2-color);
+    background-color: transparent;
 }
 
 .upload-btn-wrapper {
