@@ -97,16 +97,14 @@
     <section class="py-4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="./images/profilebg.png" class="img-fluid profile-card" alt="">
+                <div class="col-md-6 col-sm-12">
+                    <div class="profile-card">
+                        <img src="./images/profilebg.png" class="img-fluid " alt="">
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <div class="wallet-btnbody">
-                        <button class="btn addbtn">
-                            <p>
-                                Add to my wallet
-                            </p>
-                        </button>
+                        <button class="cta-btn2">Add to my wallet </button>
                     </div>
                 </div>
             </div>
@@ -119,57 +117,58 @@
         <div class="container">
             <div class="d-flex align-items-center gap-5 py-3">
                 <h3 class="profile">Profile</h3>
-                <button class="btn btn-done">Done</button>
+                <button class="cta-btn2">Done</button>
             </div>
             <p class="paragraph2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br>
                 nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                 nostrud.</p>
 
             <!-- form sec here -->
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="input-group mb-4">
-                        <label for="companyname"><i class="fa-regular fa-user"></i> Company
-                            Name</label>
-                        <input type="text" class="input-fill fill-color" name="companyname" id="companyname" required>
-
-                    </div>
-                    <div class="input-group mb-4">
-                        <label for="email"><i class="fa-regular fa-envelope"></i> Email</label>
-                        <input type="email" class="input-fill fill-color" name="email" id="email" required>
-                    </div>
-                    <div class="input-group mb-4">
-                        <label for="phone"><i class="fa-solid fa-phone"></i> Mobile</label>
-                        <input type="number" class="input-fill fill-color" name="phone" id="phone">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="input-group mb-4">
-                        <label for="crno"><i class="fa-regular fa-user"></i> QID.No</label>
-                        <input type="text" class="input-fill fill-color" name="crno" id="crno">
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="btn-forget d-flex  align-items-center">
-                            <label for="licencsno"><i class="fa-solid fa-lock"></i> Password</label>
-                            <button type="reset" class="btn forget">Change</button>
+            <form class="mt-5 profile-from" action="" method="post">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="input-group mb-4">
+                            <label for="companyname"><i class="fa-regular fa-user"></i> Company
+                                Name</label>
+                            <input type="text" class="input-fill " name="companyname" id="companyname" required>
                         </div>
-                        <input type="text" class="input-fill fill-color" name="licencsno" id="licencsno">
+                        <div class="input-group mb-4">
+                            <label for="email"><i class="fa-regular fa-envelope"></i> Email</label>
+                            <input type="email" class="input-fill " name="email" id="email" required>
+                        </div>
+                        <div class="input-group mb-4">
+                            <label for="phone"><i class="fa-solid fa-phone"></i> Mobile</label>
+                            <input type="number" class="input-fill " name="phone" id="phone">
+                        </div>
                     </div>
-                    <div class="input-group align-items-center gap-3">
-                        <input type="checkbox" name="" id="">
-                        <p>I agree Terms of Services</p>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="input-group mb-4">
+                            <label for="crno"><i class="fa-regular fa-user"></i> QID.No</label>
+                            <input type="text" class="input-fill " name="crno" id="crno">
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="btn-forget d-flex  align-items-center">
+                                <label for="licencsno"><i class="fa-solid fa-lock"></i> Password</label>
+                            </div>
+                            <input type="text" class="input-fill " name="licencsno" id="licencsno">
+                        </div>
+                        <div class="input-group align-items-center gap-3">
+                            <input type="checkbox" name="" id="">
+                            <p>I agree Terms of Services</p>
+                        </div>
                     </div>
                 </div>
-
-            </div>
+                <button class="cta-btn2 mt-3" type="submit">Submit</button>
+            </form>
         </div>
     </section>
 
 
 
     <!-- commutication section here------- -->
-    <section class="py-4">
-        <div class="container">
+    <section>
+        <div class="container py-4">
             <h3 class="profile py-3">Communication preferences</h3>
             <div class="more-details py-3">
                 <div class=" d-flex justify-content-between align-items-center">
@@ -205,102 +204,72 @@
     </section>
 
     <!-- FAQ’s section here------------- -->
-    <section class="py-4">
-        <div class="container">
-            <div class="faq-section py-3">
-                <div class=" d-flex justify-content-between align-items-center">
-                    <h5 class="paragraph2">How to Login</h5>
-                    <i class="fa-solid fa-angle-right faq-icon"></i>
-                </div>
-                <p class="paragraph2">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
-                    elit, sed diam nonummy nibh euismod
-                </p>
-            </div>
-            <div class="faq-section py-3">
-                <div class=" d-flex justify-content-between align-items-center">
-                    <h5 class="paragraph2">How to register as partner</h5>
-                    <i class="fa-solid fa-angle-right faq-icon"></i>
-                </div>
-                <p class="paragraph2">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
-                    elit, sed diam nonummy nibh euismod
-                </p>
-            </div>
-            <div class="faq-section py-3">
-                <div class=" d-flex justify-content-between align-items-center">
-                    <h5 class="paragraph2">What is active status
-                    </h5>
-                    <i class="fa-solid fa-angle-right faq-icon"></i>
-                </div>
-                <p class="paragraph2">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
-                    elit, sed diam nonummy nibh euismod
-                </p>
-            </div>
-
-
-            <div class="accordion" id="accordionExample">
+    <section>
+        <div class="container py-4">
+            <div class="accordion py-5">
+                
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                    <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <h5 class="paragraph2">How to Login</h5>
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <h5 class="paragraph2">How to Login</h5>
+                            </div>
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <p class="paragraph2">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
+                                elit, sed diam nonummy nibh euismod
+                            </p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
+                    <h2 class="accordion-header" id="accordionExample2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <h5 class="paragraph2">How to register as partner</h5>
+                            </div>
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
+                    <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample2">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <p class="paragraph2">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
+                                elit, sed diam nonummy nibh euismod
+                            </p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
+                    <h2 class="accordion-header" id="accordionExample3">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne">
+                            <div class=" d-flex justify-content-between align-items-center">
+                                <h5 class="paragraph2">What is active status</h5>
+                            </div>
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
+                    <div id="collapseOne3" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample3">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <p class="paragraph2">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing <br>
+                                elit, sed diam nonummy nibh euismod
+                            </p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-
     </section>
 
     <footer>
