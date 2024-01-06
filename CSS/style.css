@@ -90,8 +90,14 @@ button {
     gap: 60px;
 }
 
-.nav-link {
-    color: white;
+.nav-item a {
+    color: rgb(194, 194, 194);
+}
+
+.nav-item a:hover,
+.active a {
+    color: rgb(255, 255, 255) !important;
+    /* text-decoration: underline; */
 }
 
 .navbar-toggler {
@@ -563,6 +569,7 @@ a {
 
 .error {
     color: #f98484 !important;
+    text-transform: capitalize;
 }
 
 .footer-logo {
