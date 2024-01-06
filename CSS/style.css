@@ -57,12 +57,15 @@ button {
 
 .cta-btn2 {
     background-color: var(--grey-color);
-    padding: 10px 30px;
+    padding: 10px 70px;
     border-radius: 20px;
     color: var(--darkgrey-color);
     border-radius: 50px;
 }
-
+.cta-btn-co{
+    background-color: var(--darkgrey-color);
+    color: var(--paragraph-text-co);
+}
 
 /* ------------------------------------
      nav section start 
@@ -280,7 +283,7 @@ Catogory section here
 }
 
 .card {
-    background-color: var(--grey-color);
+    background-color: var(--paragraph-text-co);
     height: 225px;
     box-shadow: var(--box-shadow);
     border-radius: 15px;
@@ -362,7 +365,7 @@ label {
 }
 
 .college_name {
-    color: var(--paragraph-text-co);
+    color: var(--text-color);
 }
 
 .paragraph2 {
@@ -528,9 +531,6 @@ Profile page Codes Here
 }
 
 /* Page 6 Codes here--------------------- */
-.extra-input>label {
-    float: right;
-}
 
 label img {
     width: 70px;
@@ -543,6 +543,9 @@ label img {
     color: var(--text-color);
 }
 
+.input-group p{
+    margin-bottom: 0px;
+}
 
 
 /* ------------footer code -----------------*/
