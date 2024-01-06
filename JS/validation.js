@@ -42,15 +42,15 @@ $("#registerForm").validate({
 
     messages: {
         companyname: {
-            required: "plz enter your company name",
+            required: "Please enter your company name",
             noSpace: "space  not allow",
         },
         email: {
-            required: "plz enter your email id",
+            required: "Please Enter Your Email id",
 
         },
         phone: {
-            required: "plz enter your phone number",
+            required: "Please enter your phone number",
             minlength: "10 digit phone number allowed in this box",
             maxlength: "10 digit phone number allowed in this box",
         }
@@ -84,24 +84,23 @@ $("#register").validate({
 
     messages: {
         cname: {
-            required: "Plz Enter Your company name",
+            required: "Please Enter Your company name",
 
         },
         mobile: {
-            required: "Plz Enter Your phone number",
+            required: "Please Enter Your phone number",
             minlength: "10 digit phone number allowed in this box",
             maxlength: "10 digit phone number allowed in this box"
         },
         gmail: {
-            required: "Plz Enter Your Email Id",
+            required: "Please Enter Your Email Id",
 
         },
         qid: {
-            required: "Plz Enter Your Qid No",
+            required: "Please  Enter Your Qid No",
         },
     },
 });
-
 
 // login validation 
 $("#login").validate({
@@ -112,16 +111,55 @@ $("#login").validate({
         password: {
             required: true,
             minlength: 8,
-
-
         },
 
     },
 
     messages: {
         password: {
-            required: "Plz Enter Your Password",
+            required: "Please Enter Your Password",
         },
     },
 });
 
+
+// 
+
+
+$("#registerform").validate({
+
+    rules: {
+
+        username: {
+            required: true,
+            minlength: 3,
+        },
+        mail: {
+            required: true,
+            email: true,
+        },
+        number: {
+            required: true,
+            digits: true,
+            minlength: 10,
+        }
+
+    },
+    messages: {
+
+        username: {
+            required: "Please  Enter Your User Name",
+
+        },
+
+        mail: {
+            required: "Please Enter Your Email Id",
+            email: "",
+        },
+        number: {
+            required: "Please Enter Your Phone Number"
+        }
+
+    }
+
+})

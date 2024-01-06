@@ -50,6 +50,7 @@ button {
     border-radius: 20px;
     background-color: var(--darkgrey-color);
     color: var(--text-color);
+    border-radius: 50px;
 }
 
 .cta-btn2 {
@@ -57,6 +58,7 @@ button {
     padding: 10px 30px;
     border-radius: 20px;
     color: var(--darkgrey-color);
+    border-radius: 50px;
 }
 
 
@@ -565,6 +567,7 @@ a {
 
 .error {
     color: #f98484 !important;
+    text-transform: capitalize;
 }
 
 .footer-logo {
