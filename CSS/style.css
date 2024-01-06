@@ -53,6 +53,12 @@ button {
     background-color: var(--darkgrey-color);
     color: var(--text-color);
     border-radius: 50px;
+    transition: all 0.3s linear;
+}
+
+.cta-btn1:hover {
+    background-color: #504d4c;
+    transition: all 0.3s linear;
 }
 
 .cta-btn2 {
@@ -61,11 +67,18 @@ button {
     border-radius: 20px;
     color: var(--darkgrey-color);
     border-radius: 50px;
+    transition: all 0.3s linear;
 }
-.cta-btn-co{
+
+.cta-btn2:hover {
+    background-color: #ffffff;
+    transition: all 0.3s linear;
+}
+
+/* .cta-btn-co{
     background-color: var(--darkgrey-color);
     color: var(--paragraph-text-co);
-}
+} */
 
 /* ------------------------------------
      nav section start 
@@ -329,7 +342,8 @@ label {
     background-color: var(--grey-color);
 }
 
-.box p ,.fa-paper-plane {
+.box p,
+.fa-paper-plane {
     color: var(--text2-color);
 }
 
@@ -543,7 +557,7 @@ label img {
     color: var(--text-color);
 }
 
-.input-group p{
+.input-group p {
     margin-bottom: 0px;
 }
 

@@ -6,7 +6,7 @@
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
+
     .searchheading {
         margin: auto;
     }
@@ -15,14 +15,15 @@
         padding: 20px;
     }
 
-    .btn-forget{
+    .btn-forget {
         gap: 200px;
     }
 
-    .box{
+    .box {
         margin-top: 30px;
     }
-    .wallet-btnbody{
+
+    .wallet-btnbody {
         margin-top: 60px !important;
     }
 
@@ -37,7 +38,7 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .navbar-nav{
+    .navbar-nav {
         gap: 20px;
     }
 
@@ -45,13 +46,19 @@
     .menu-list {
         width: 100px;
     }
-    .btn-forget{
+
+    .btn-forget {
         gap: 200px;
     }
 
-    .wallet-btnbody{
+    .wallet-btnbody {
         margin-top: 110px;
     }
+
+    .map-box iframe {
+        width: 100%;
+    }
+
     .footer-left {
         text-align: center;
     }
