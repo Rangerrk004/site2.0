@@ -18,6 +18,13 @@
     .btn-forget{
         gap: 200px;
     }
+
+    .box{
+        margin-top: 30px;
+    }
+    .wallet-btnbody{
+        margin-top: 60px !important;
+    }
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -30,7 +37,13 @@
     .menu-list {
         width: 100px;
     }
+    .btn-forget{
+        gap: 200px;
+    }
 
+    .wallet-btnbody{
+        margin-top: 110px;
+    }
     .footer-left {
         text-align: center;
     }

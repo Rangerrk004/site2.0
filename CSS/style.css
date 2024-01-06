@@ -44,12 +44,14 @@ button {
     border-radius: 5px;
     background-color: var(--darkgrey-color);
     color: var(--text-color);
+    border-radius: 50px;
 }
 
 .cta-btn2 {
     background-color: var(--grey-color);
     padding: 10px 80px;
     color: var(--darkgrey-color);
+    border-radius: 50px;
 }
 
 /* ------------------------------------
