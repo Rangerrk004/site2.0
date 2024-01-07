@@ -122,10 +122,7 @@ $("#login").validate({
     },
 });
 
-
 // 
-
-
 $("#registerform").validate({
 
     rules: {

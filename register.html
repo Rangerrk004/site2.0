@@ -38,7 +38,7 @@
                     <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                         <ul class="navbar-nav text-center mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="new-offer.html">New Offers</a>
@@ -47,7 +47,7 @@
                                 <a class="nav-link" href="location.html">Location Map</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="register.html">Register as Partner</a>
+                                <a class="nav-link" href="register.html">Partner</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="profile.html">Profile</a>
@@ -78,7 +78,8 @@
                     </div>
 
                     <!-- form sec here -->
-                    <form class="profile-from d-flex justify-content-center flex-wrap" action="" id="register" autocomplete="off">
+                    <form class="profile-from d-flex justify-content-center flex-wrap" action="" id="register"
+                        autocomplete="off">
 
                         <div class="input-group mb-4">
                             <label for="cname"><i class="fa-regular fa-user"></i> Company
@@ -160,16 +161,16 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="input-group mb-4">
-                                    <label for="cname"><img src="./images/logo.png" alt=""> <i
+                                    <label><img src="./images/logo.png" alt=""> <i
                                             class="fa-regular fa-user"></i></label>
-                                    <input type="text" class="input-fill" name="cname" id="cname" required>
+                                    <input type="text" class="input-fill">
 
                                 </div>
 
                                 <div class="input-group mb-4">
-                                    <label for="companyname"><i class="fa-regular fa-user"></i> Company
+                                    <label for="cname"><i class="fa-regular fa-user"></i> Company
                                         Name</label>
-                                    <input type="text" class="input-fill" name="companyname" id="cname" required>
+                                    <input type="text" class="input-fill" name="cname" id="cname" required>
 
                                 </div>
                                 <div class="input-group mb-4">
@@ -218,18 +219,18 @@
 
                                 <!-- dropdown here----// -->
                                 <div class="upload-btn-wrapper mb-4">
-
-                                    <div class="dropdown">
-                                        <button class="btn cta-btn dropdown-toggle" type="button"
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Business Catogery
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Most Recomended</a></li>
-                                            <li><a class="dropdown-item" href="#">Most Propuler</a></li>
-                                        </ul>
-
-                                    </div>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">Home Appliances</option>
+                                        <option value="2">Health</option>
+                                        <option value="3">Mobile & Apps</option>
+                                        <option value="3">Mobile & Apps</option>
+                                        <option value="">Hotels</option>
+                                        <option value="">Fashion</option>
+                                        <option value="">Entertainment</option>
+                                        <option value="">Jewellery and Watches</option>
+                                        <option value="">Sports</option>
+                                    </select>
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center">
                                     <button type="submit" class="btn cta-btn1">Register</button>

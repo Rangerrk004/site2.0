@@ -47,6 +47,7 @@ button {
     border-radius: 50px 50px 0px 0px;
 }
 
+
 .cta-btn1 {
     padding: 5px 50px;
     border-radius: 20px;
@@ -74,6 +75,7 @@ button {
     background-color: #ffffff;
     transition: all 0.3s linear;
 }
+
 
 .error {
     color: #f98484 !important;
@@ -550,10 +552,7 @@ label img {
 
 
 /* ------------footer code -----------------*/
-.black-bg {
-    background-color: black;
-    border-radius: 50px 50px 0px 0px;
-}
+
 
 .footer-logo {
     max-width: 100px;
