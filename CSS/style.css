@@ -74,6 +74,7 @@ button {
     background-color: #ffffff;
     transition: all 0.3s linear;
 }
+
 .error {
     color: #f98484 !important;
     text-transform: capitalize;
@@ -91,7 +92,7 @@ button {
 
 .image-logo img {
     margin-top: 50px;
-    width: 100px;
+    width: 150px;
 }
 
 
@@ -205,7 +206,8 @@ Catogory section here
     width: 100%;
 }
 
-.menu-list {
+.menu-list,
+.all-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,10 +215,12 @@ Catogory section here
     padding: 20px;
     min-width: 10%;
     transition: all 0.3s;
+    background-color: var(--grey-color);
+    border-radius: 5px;
 }
 
 .menu-list:hover {
-    background-color: var(--box-background);
+    background-color: var(--grey-color);
     border-radius: 30%;
     transition: all 0.3s;
 }
@@ -227,10 +231,19 @@ Catogory section here
     height: 40px;
 }
 
-.menu-list p {
-    margin: 0;
+.all-icons {
+    width: 65px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--darkgrey-color);
+    box-shadow: 0px -2px 0px 1px rgb(156, 18, 18);
 }
 
+.menu-list p {
+    margin: 0;
+    color: var(--darkgrey-color) !important;
+}
 /* 2img width fixing code */
 .list-iii {
     width: 50px !important;
@@ -374,7 +387,7 @@ label {
 }
 
 /*--------------
- Page4 codes here
+ Page4 LOCATION PAGES codes here
  ---------------------- */
 .map-box {
     text-align: center;
@@ -518,7 +531,7 @@ Profile page Codes Here
     background-color: transparent;
 }
 
-/* Page 6 Codes here--------------------- */
+/* Page 6 REGISTER PAGES Codes here--------------------- */
 
 label img {
     width: 70px;
@@ -561,4 +574,3 @@ a {
     color: var(--text-color);
     text-decoration: none;
 }
-
