@@ -47,6 +47,7 @@ button {
     border-radius: 50px 50px 0px 0px;
 }
 
+
 .cta-btn1 {
     padding: 5px 50px;
     border-radius: 20px;
@@ -75,10 +76,10 @@ button {
     transition: all 0.3s linear;
 }
 
-/* .cta-btn-co{
-    background-color: var(--darkgrey-color);
-    color: var(--paragraph-text-co);
-} */
+.error {
+    color: #f98484 !important;
+    text-transform: capitalize;
+}
 
 /* ------------------------------------
      nav section start 
@@ -170,31 +171,6 @@ button {
     display: flex;
     max-width: 500px;
     margin: auto;
-}
-
-
-/* ------------footer code -----------------*/
-
-.footer-logo {
-    max-width: 100px;
-    margin: 10px;
-}
-
-.privacy {
-    display: flex;
-    gap: 10px;
-    justify-content: end;
-    text-align: center;
-}
-
-.privacy a {
-    gap: 20px;
-    color: var(--text-color);
-
-}
-
-.privacy p {
-    margin-bottom: 0px;
 }
 
 
@@ -563,54 +539,23 @@ label img {
 
 
 /* ------------footer code -----------------*/
-.black-bg {
-    background-color: black;
-    border-radius: 50px 50px 0px 0px;
+
+
+.footer-logo {
+    max-width: 100px;
+    margin: 10px;
 }
 
-.privacy,
-a {
-    /* float: right; */
-    gap: 20px;
-    color: var(--text-color);
-    text-decoration: none;
+.privacy {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    text-align: center;
 }
 
-.privacy p {
-    margin-bottom: 0px;
-}
 
-.footer-section {
-    align-items: center;
-}
 
 .error {
     color: #f98484 !important;
     text-transform: capitalize;
 }
-
-.footer-logo {
-    width: 100px;
-}
-
-/*------------------------------
-        meadia quries
- -------------------------------*/
-
-@media (max-width: 575.98px) {
-    .dropdown-menu{
-        background-color: #E0E0E0;
-    }
-}
-
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {}
-
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
-
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
-
-/* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
