@@ -75,8 +75,13 @@ button {
     background-color: #ffffff;
     transition: all 0.3s linear;
 }
-
-
+.btn-2 {
+    color: var(--grey-color);
+    background-color: var(--darkgrey-color);
+}
+.btn-2:hover{
+    color: var(--darkgrey-color);
+}
 .error {
     color: #f98484 !important;
     text-transform: capitalize;
@@ -167,12 +172,22 @@ button {
     max-width: 50px;
 }
 
-.searchbar-2 {
+.select_catagori {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5px 35px;
+    border-radius: 5px;
+    color: var(--darkgrey-color);
+    outline: none;
+}
+
+/* .searchbar-2 {
     width: 100% !important;
     display: flex;
     max-width: 500px;
     margin: auto;
-}
+} */
 
 
 /* -------------------
@@ -208,23 +223,32 @@ Catogory section here
     width: 100%;
 }
 
-.menu-list,
-.all-icons {
+.menu-list {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 10px;
     padding: 20px;
     min-width: 10%;
-    transition: all 0.3s;
-    background-color: var(--grey-color);
     border-radius: 5px;
+}
+
+.menu-list-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-list:hover {
     background-color: var(--grey-color);
-    border-radius: 30%;
+    /* border-radius: 30%; */
     transition: all 0.3s;
+}
+
+.menu-list:hover p {
+    color: var(--darkgrey-color);
 }
 
 .menu-list img {
@@ -234,18 +258,36 @@ Catogory section here
 }
 
 .all-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    min-width: 10%;
+    transition: all 0.3s;
+    /* background-color: var(--grey-color); */
+    border-radius: 25px;
+}
+.all-icons {
     width: 65px;
     height: 60px;
-    padding: 10px;
-    border-radius: 25px;
+}
+
+.menu-list:hover .all-icons {
     background-color: var(--darkgrey-color);
     box-shadow: 0px -2px 0px 1px rgb(156, 18, 18);
+    transition: all 0.3s;
 }
 
 .menu-list p {
     margin: 0;
-    color: var(--darkgrey-color) !important;
+    /* color: var(--darkgrey-color) !important; */
 }
+
+.menu-list p:hover {
+    color: var(--darkgrey-color);
+}
+
 /* 2img width fixing code */
 .list-iii {
     width: 50px !important;
@@ -335,11 +377,11 @@ label {
 .fa-paper-plane {
     color: var(--text2-color);
 }
-
-.btn-1 {
+.box button{
     float: right;
-    color: var(--darkgrey-color);
+    margin-bottom: 10px;
 }
+
 
 /* slider------ */
 .carousel-indicators [data-bs-target] {
@@ -550,6 +592,11 @@ label img {
     margin-bottom: 0px;
 }
 
+.form-select {
+    background-color: transparent;
+    color: var(--darkgrey-color);
+    border: transparent;
+}
 
 /* ------------footer code -----------------*/
 
