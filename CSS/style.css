@@ -75,13 +75,14 @@ button {
     background-color: #ffffff;
     transition: all 0.3s linear;
 }
-.btn-2 {
+
+/* .btn-2 {
     color: var(--grey-color);
     background-color: var(--darkgrey-color);
 }
 .btn-2:hover{
     color: var(--darkgrey-color);
-}
+} */
 .error {
     color: #f98484 !important;
     text-transform: capitalize;
@@ -176,8 +177,8 @@ button {
     display: flex;
     justify-content: center;
     margin: auto;
-    padding: 5px 35px;
-    border-radius: 5px;
+    padding: 10px 115px;
+    border-radius: 15px;
     color: var(--darkgrey-color);
     outline: none;
 }
@@ -268,6 +269,7 @@ Catogory section here
     /* background-color: var(--grey-color); */
     border-radius: 25px;
 }
+
 .all-icons {
     width: 65px;
     height: 60px;
@@ -373,15 +375,18 @@ label {
     background-color: var(--grey-color);
 }
 
-.box p,
-.fa-paper-plane {
+.box p {
     color: var(--text2-color);
 }
-.box button{
+.box button {
     float: right;
     margin-bottom: 10px;
 }
 
+.fa-paper-plane{
+    padding-left: 5px;
+    color: var(--grey-color);
+}
 
 /* slider------ */
 .carousel-indicators [data-bs-target] {
@@ -478,7 +483,7 @@ label {
     position: relative;
     height: 45px;
     border: 2px solid var(--darkgrey-color);
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 0px 20px;
 }
 
